@@ -26,7 +26,8 @@ export const metadata: Metadata = {
     "Advanced project management and software lifecycle platform. Plan, build, and document your projects with real-time collaboration.",
   generator: "v0.app",
   icons: {
-    icon: "/icon.svg",
+    icon: "/placeholder-logo.svg",
+    apple: "/placeholder-logo.png",
   },
 }
 

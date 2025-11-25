@@ -52,11 +52,11 @@ export function OpenSourceSection() {
               <p className="text-sm text-muted-foreground">Contributors</p>
             </div>
             <div className="rounded-xl border border-border bg-background p-6">
-              <div className="mb-3 h-8 w-8 rounded-full bg-green-500/20 text-center text-lg font-bold leading-8 text-green-500">
-                MIT
+              <div className="mb-3 text-xs font-bold text-green-500">
+                AGPL-3.0
               </div>
               <p className="text-2xl font-bold text-foreground">License</p>
-              <p className="text-sm text-muted-foreground">Free Forever</p>
+              <p className="text-sm text-muted-foreground">Free & Open</p>
             </div>
           </div>
         </div>
