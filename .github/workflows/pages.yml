@@ -23,17 +23,17 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'pnpm'
-
       - name: Setup pnpm (standalone)
         uses: pnpm/action-setup@v4
         with:
           version: 9
           standalone: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Get pnpm store directory
         shell: bash
