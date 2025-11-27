@@ -34,3 +34,6 @@ Thumbs.db
 
 # Misc
 *.tgz
+
+# Local assets (not needed in repo root)
+/logo-hg*.png
