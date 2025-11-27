@@ -29,13 +29,11 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
-      - name: Setup pnpm
+      - name: Setup pnpm (standalone)
         uses: pnpm/action-setup@v4
         with:
           version: 9
-
-      - name: Enable Corepack
-        run: corepack enable
+          standalone: true
 
       - name: Get pnpm store directory
         shell: bash
