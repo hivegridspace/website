@@ -11,42 +11,42 @@ const contributionTypes = [
     icon: Bug,
     title: "Report Bugs",
     description: "Found a bug? Open an issue on GitHub with steps to reproduce. The more detail, the better.",
-    href: "https://github.com",
+    href: "https://github.com/hivegrid/hivegrid/issues/new?template=bug_report.md",
     cta: "Report an Issue",
   },
   {
     icon: Lightbulb,
     title: "Suggest Features",
     description: "Have an idea for a new feature? Create a feature request and discuss it with the community.",
-    href: "https://github.com",
+    href: "https://github.com/hivegrid/hivegrid/issues/new?template=feature_request.md",
     cta: "Request a Feature",
   },
   {
     icon: Code,
     title: "Contribute Code",
     description: "Pick up an issue labeled 'good first issue' or work on something from the roadmap.",
-    href: "https://github.com",
+    href: "https://github.com/hivegrid/hivegrid/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22",
     cta: "View Open Issues",
   },
   {
     icon: FileText,
     title: "Improve Docs",
     description: "Help us improve documentation, fix typos, or write guides for common use cases.",
-    href: "#",
+    href: "https://github.com/hivegrid/hivegrid/tree/main/docs",
     cta: "Edit Documentation",
   },
   {
     icon: MessageSquare,
     title: "Help Others",
-    description: "Answer questions on GitHub Discussions or Discord. Share your knowledge with the community.",
-    href: "#",
+    description: "Answer questions on GitHub Discussions. Share your knowledge with the community.",
+    href: "https://github.com/hivegrid/hivegrid/discussions",
     cta: "Join Discussions",
   },
   {
     icon: Heart,
     title: "Spread the Word",
     description: "Star us on GitHub, write about HiveGrid, or share it with your network.",
-    href: "https://github.com",
+    href: "https://github.com/hivegrid/hivegrid",
     cta: "Star on GitHub",
   },
 ]
@@ -183,7 +183,7 @@ pnpm dev`}
             <p className="mb-8 text-muted-foreground">
               Check out the repository, read the contributing guide, and pick your first issue.
             </p>
-            <Link href="https://github.com">
+            <Link href="https://github.com/hivegrid/hivegrid">
               <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                 <Github className="h-5 w-5" />
                 View on GitHub

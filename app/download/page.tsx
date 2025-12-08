@@ -68,7 +68,7 @@ export default function DownloadPage() {
       <PageHeader
         badge="Download"
         title="Self-host HiveGrid"
-        description="Deploy HiveGrid on your own infrastructure. Full control over your data, complete customization, and no vendor lock-in. Free and open source under the MIT license."
+        description="Deploy HiveGrid on your own infrastructure. Full control over your data, complete customization, and no vendor lock-in. Free and open source under the AGPL-3.0 license."
       />
 
       <section className="py-16 lg:py-24">
@@ -153,7 +153,7 @@ docker exec -it hivegrid-api python manage.py createsuperuser
             </div>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="https://github.com">
+              <Link href="https://github.com/hivegrid/hivegrid">
                 <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                   <Github className="h-5 w-5" />
                   Clone from GitHub
@@ -196,7 +196,7 @@ docker exec -it hivegrid-api python manage.py createsuperuser
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="mb-4 text-2xl font-semibold text-foreground">Need Help?</h2>
             <p className="mb-8 text-muted-foreground">
-              Having trouble with your deployment? Check out our documentation, join the community on Discord, or open
+              Having trouble with your deployment? Check out our documentation or open
               an issue on GitHub.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -205,12 +205,7 @@ docker exec -it hivegrid-api python manage.py createsuperuser
                   Documentation
                 </Button>
               </Link>
-              <Link href="#discord">
-                <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
-                  Join Discord
-                </Button>
-              </Link>
-              <Link href="https://github.com">
+              <Link href="https://github.com/hivegrid/hivegrid/issues">
                 <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
                   GitHub Issues
                 </Button>

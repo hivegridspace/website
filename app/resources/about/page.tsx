@@ -32,10 +32,10 @@ const values = [
 ]
 
 const stats = [
-  { value: "MIT", label: "License" },
-  { value: "2023", label: "Founded" },
-  { value: "500+", label: "Contributors" },
-  { value: "50K+", label: "Users" },
+  { value: "AGPL-3.0", label: "License" },
+  { value: "2024", label: "Founded" },
+  { value: "Open", label: "Development" },
+  { value: "Free", label: "Forever" },
 ]
 
 export default function AboutPage() {

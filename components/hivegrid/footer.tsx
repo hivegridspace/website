@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Github, Twitter } from "lucide-react"
+import { Github } from "lucide-react"
 
 const footerLinks = {
   Product: [
@@ -17,15 +17,12 @@ const footerLinks = {
     { name: "Changelog", href: "/resources/changelog" },
   ],
   Community: [
-    { name: "GitHub", href: "https://github.com" },
-    { name: "Discord", href: "#discord" },
+    { name: "GitHub", href: "https://github.com/hivegrid" },
     { name: "Contributing", href: "/contribute" },
     { name: "Roadmap", href: "/roadmap" },
   ],
   Legal: [
-    { name: "Privacy", href: "#privacy" },
-    { name: "Terms", href: "#terms" },
-    { name: "License", href: "#license" },
+    { name: "License (AGPL-3.0)", href: "https://github.com/hivegrid/hivegrid/blob/main/LICENSE" },
   ],
 }
 
@@ -43,13 +40,9 @@ export function HiveGridFooter() {
               Open source project management for modern software teams. Plan, build, and ship together.
             </p>
             <div className="mt-6 flex gap-4">
-              <Link href="https://github.com" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link href="https://github.com/hivegrid" className="text-muted-foreground transition-colors hover:text-primary">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
               </Link>
             </div>
           </div>
