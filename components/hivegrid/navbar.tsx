@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/ui/theme-toggle"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -156,7 +157,8 @@ export function HiveGridNavbar() {
           </NavigationMenu>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <ThemeToggle />
           <Link href="/download">
             <Button className="hidden gap-2 bg-primary text-primary-foreground hover:bg-primary/90 sm:flex">
               <Download className="h-4 w-4" />

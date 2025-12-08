@@ -37,23 +37,16 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Stats Row */}
-        <div className="mt-20 grid grid-cols-2 gap-8 border-t border-border pt-12 md:grid-cols-4">
-          <div className="text-center">
-            <p className="text-3xl font-bold text-primary lg:text-4xl">10K+</p>
-            <p className="mt-1 text-sm text-muted-foreground">GitHub Stars</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-foreground lg:text-4xl">500+</p>
-            <p className="mt-1 text-sm text-muted-foreground">Contributors</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-foreground lg:text-4xl">50K+</p>
-            <p className="mt-1 text-sm text-muted-foreground">Active Users</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-foreground lg:text-4xl">99.9%</p>
-            <p className="mt-1 text-sm text-muted-foreground">Uptime</p>
+        {/* Early Adopter Badge */}
+        <div className="mt-16 flex justify-center">
+          <div className="inline-flex items-center gap-3 rounded-full border border-primary/20 bg-primary/5 px-6 py-3">
+            <span className="flex h-2 w-2">
+              <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-primary opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+            </span>
+            <span className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">Early Access</span> — Join us in building the next-generation project management tool
+            </span>
           </div>
         </div>
       </div>

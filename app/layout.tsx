@@ -21,14 +21,56 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "HiveGrid - Open Source Project Management",
+  metadataBase: new URL("https://hivegrid.dev"),
+  title: {
+    default: "HiveGrid - Open Source Project Management",
+    template: "%s | HiveGrid",
+  },
   description:
-    "Advanced project management and software lifecycle platform. Plan, build, and document your projects with real-time collaboration.",
-  generator: "v0.app",
+    "Advanced open source project management and software lifecycle platform. Plan, build, and document your projects with real-time collaboration.",
+  keywords: [
+    "project management",
+    "open source",
+    "team collaboration",
+    "issue tracking",
+    "kanban",
+    "agile",
+    "self-hosted",
+  ],
+  authors: [{ name: "HiveGrid Team" }],
+  creator: "HiveGrid",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://hivegrid.dev",
+    siteName: "HiveGrid",
+    title: "HiveGrid - Open Source Project Management",
+    description:
+      "Advanced open source project management and software lifecycle platform. Plan, build, and document your projects with real-time collaboration.",
+    images: [
+      {
+        url: "/images/hivegrid-logo.png",
+        width: 512,
+        height: 512,
+        alt: "HiveGrid Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HiveGrid - Open Source Project Management",
+    description:
+      "Advanced open source project management and software lifecycle platform.",
+    images: ["/images/hivegrid-logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [
       { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" }
+      { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
     ],
     apple: "/apple-touch-icon.png",
     other: [{ rel: "icon", url: "/icon-192.png", sizes: "192x192", type: "image/png" }],
@@ -41,7 +83,20 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme') || 
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.classList.toggle('dark', theme === 'dark');
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${figtree.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
       </body>

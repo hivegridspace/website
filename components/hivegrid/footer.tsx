@@ -75,7 +75,7 @@ export function HiveGridFooter() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} HiveGrid. Released under MIT License.
+            &copy; {new Date().getFullYear()} HiveGrid. Released under AGPL-3.0 License.
           </p>
           <p className="text-sm text-muted-foreground">Made with care by the open source community</p>
         </div>

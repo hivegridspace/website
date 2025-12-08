@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, Star, GitFork, Users } from "lucide-react"
+import { Github, GitFork, Users } from "lucide-react"
 
 export function OpenSourceSection() {
   return (
@@ -18,7 +18,7 @@ export function OpenSourceSection() {
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
               HiveGrid is 100% open source. Contribute to the codebase, report issues, or help improve documentation.
-              Join hundreds of developers making project management better.
+              Join us in building something great from the ground up.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
@@ -37,25 +37,31 @@ export function OpenSourceSection() {
 
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-xl border border-border bg-background p-6">
-              <Star className="mb-3 h-8 w-8 text-primary" />
-              <p className="text-2xl font-bold text-foreground">10,000+</p>
-              <p className="text-sm text-muted-foreground">GitHub Stars</p>
+              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
+                <Github className="h-4 w-4 text-primary" />
+              </div>
+              <p className="text-lg font-bold text-foreground">New Project</p>
+              <p className="text-sm text-muted-foreground">Join from the start</p>
             </div>
             <div className="rounded-xl border border-border bg-background p-6">
-              <GitFork className="mb-3 h-8 w-8 text-muted-foreground" />
-              <p className="text-2xl font-bold text-foreground">2,500+</p>
-              <p className="text-sm text-muted-foreground">Forks</p>
+              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-muted">
+                <GitFork className="h-4 w-4 text-muted-foreground" />
+              </div>
+              <p className="text-lg font-bold text-foreground">100% Open</p>
+              <p className="text-sm text-muted-foreground">Transparent codebase</p>
             </div>
             <div className="rounded-xl border border-border bg-background p-6">
-              <Users className="mb-3 h-8 w-8 text-muted-foreground" />
-              <p className="text-2xl font-bold text-foreground">500+</p>
-              <p className="text-sm text-muted-foreground">Contributors</p>
+              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-muted">
+                <Users className="h-4 w-4 text-muted-foreground" />
+              </div>
+              <p className="text-lg font-bold text-foreground">Early Adopters</p>
+              <p className="text-sm text-muted-foreground">Be one of the first</p>
             </div>
             <div className="rounded-xl border border-border bg-background p-6">
               <div className="mb-3 text-xs font-bold text-green-500">
                 AGPL-3.0
               </div>
-              <p className="text-2xl font-bold text-foreground">License</p>
+              <p className="text-lg font-bold text-foreground">License</p>
               <p className="text-sm text-muted-foreground">Free & Open</p>
             </div>
           </div>
