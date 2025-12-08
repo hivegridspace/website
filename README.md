@@ -1,30 +1,35 @@
-# Auralink - SaaS Landing Page
+# HiveGrid Website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/bsisducks-projects/v0-auralink-saa-s-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/QIG5PiGm5xC)
+Open source project management platform website.
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+HiveGrid is an advanced project management and software lifecycle platform. This repository contains the source code for the public-facing website.
+
+## Development
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Build for production
+pnpm build
+```
 
 ## Deployment
 
-Your project is live at:
+The website is deployed automatically via GitHub Pages on push to the `main` branch.
 
-**[https://vercel.com/bsisducks-projects/v0-auralink-saa-s-landing-page](https://vercel.com/bsisducks-projects/v0-auralink-saa-s-landing-page)**
+## Tech Stack
 
-## Build your app
+- **Framework:** Next.js 15
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Language:** TypeScript
 
-Continue building your app on:
+## License
 
-**[https://v0.app/chat/QIG5PiGm5xC](https://v0.app/chat/QIG5PiGm5xC)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+AGPL-3.0 - See [LICENSE](https://github.com/hivegrid/hivegrid/blob/main/LICENSE) for details.
