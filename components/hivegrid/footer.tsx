@@ -17,12 +17,12 @@ const footerLinks = {
     { name: "Changelog", href: "/resources/changelog" },
   ],
   Community: [
-    { name: "GitHub", href: "https://github.com/hivegrid" },
+    { name: "GitHub", href: "https://github.com/hivegridspace" },
     { name: "Contributing", href: "/contribute" },
     { name: "Roadmap", href: "/roadmap" },
   ],
   Legal: [
-    { name: "License (AGPL-3.0)", href: "https://github.com/hivegrid/hivegrid/blob/main/LICENSE" },
+    { name: "License (AGPL-3.0)", href: "https://github.com/hivegridspace/hivegrid/blob/main/LICENSE" },
   ],
 }
 
@@ -40,7 +40,7 @@ export function HiveGridFooter() {
               Open source project management for modern software teams. Plan, build, and ship together.
             </p>
             <div className="mt-6 flex gap-4">
-              <Link href="https://github.com/hivegrid" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link href="https://github.com/hivegridspace" className="text-muted-foreground transition-colors hover:text-primary">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>

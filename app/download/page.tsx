@@ -133,7 +133,7 @@ export default function DownloadPage() {
             <div className="rounded-xl border border-border bg-card p-6">
               <pre className="overflow-x-auto text-sm text-muted-foreground">
                 {`# Clone the HiveGrid repository
-git clone https://github.com/hivegrid/hivegrid.git
+git clone https://github.com/hivegridspace/hivegrid.git
 cd hivegrid
 
 # Copy environment variables
@@ -153,7 +153,7 @@ docker exec -it hivegrid-api python manage.py createsuperuser
             </div>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="https://github.com/hivegrid/hivegrid">
+              <Link href="https://github.com/hivegridspace/hivegrid">
                 <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                   <Github className="h-5 w-5" />
                   Clone from GitHub
@@ -205,7 +205,7 @@ docker exec -it hivegrid-api python manage.py createsuperuser
                   Documentation
                 </Button>
               </Link>
-              <Link href="https://github.com/hivegrid/hivegrid/issues">
+              <Link href="https://github.com/hivegridspace/hivegrid/issues">
                 <Button variant="outline" className="border-border text-foreground hover:bg-secondary bg-transparent">
                   GitHub Issues
                 </Button>

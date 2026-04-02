@@ -32,4 +32,4 @@ The website is deployed automatically via GitHub Pages on push to the `main` bra
 
 ## License
 
-AGPL-3.0 - See [LICENSE](https://github.com/hivegrid/hivegrid/blob/main/LICENSE) for details.
+AGPL-3.0 - See [LICENSE](https://github.com/hivegridspace/hivegrid/blob/main/LICENSE) for details.
