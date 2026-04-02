@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, ArrowRight, Download } from "lucide-react"
 
@@ -21,19 +22,23 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
-              <Download className="h-5 w-5" />
-              Download HiveGrid
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 border-border text-foreground hover:bg-secondary bg-transparent"
-            >
-              <Github className="h-5 w-5" />
-              View on GitHub
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+            <Link href="/download">
+              <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+                <Download className="h-5 w-5" />
+                Download HiveGrid
+              </Button>
+            </Link>
+            <Link href="https://github.com/hivegridspace" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                variant="outline"
+                className="gap-2 border-border text-foreground hover:bg-secondary bg-transparent"
+              >
+                <Github className="h-5 w-5" />
+                View on GitHub
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
 
